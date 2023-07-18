@@ -2,3 +2,23 @@ yum install python3-virtualenv -y # Installing virtual env
 python -m venv new_virtula # creating the new virtual env
 source new_virtula/bin/activate   # Activating new virtuals env
 deactivate # to deactivate the new virtuals env
+sudo yum install python3-pip #Installing pip
+Pip list # to list the installed modules
+output:
+Package                       Version
+----------------------------- --------
+appdirs                       1.4.4
+attrs                         23.1.0
+aws-cdk.aws-codestar          1.204.0
+
+pip install pip_search # To install pip_search module for searching the modules
+pip_search aws # seraching aws modules list
+pip install aws-cdk.aws-codestar
+pip freeze # Output installed packages in requirements format 
+output:
+[ec2-user@ip-172-31-36-250 ~]$ pip freeze
+appdirs==1.4.4
+attrs==23.1.0
+aws-cdk.aws-codestar==1.204.0
+
+pip install -r requirements.txt
