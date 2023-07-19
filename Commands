@@ -1,4 +1,5 @@
 yum install python3-virtualenv -y # Installing virtual env
+python test.py
 python -m venv new_virtula # creating the new virtual env
 source new_virtula/bin/activate   # Activating new virtuals env
 deactivate # to deactivate the new virtuals env
